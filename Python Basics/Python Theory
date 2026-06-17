@@ -1,0 +1,89 @@
+*****************************************  Python Data Type  ******************************************
+Mutable
+list, set, dict, bytearray
+
+Immutable
+int, float, complex
+bool
+str
+tuple
+frozenset
+bytes
+None
+
+****************************************  Difference  **************************************************
+
+List →        Ordered, mutable, allows duplicates
+Tuple →       Ordered, immutable, memory efficient
+Set →         Unordered, unique elements, fast
+Dictionary →  Key‑value pairs, fastest lookup
+
+***************************************   Methods  *****************************************************
+Tuple methods
+Method          Description
+count(x)        Returns number of occurrences of x
+index(x)        Returns first index of x
+
+List methods
+Method          Description
+append()        Add item at end
+extend()        Add multiple items
+insert()        Insert at index
+remove()        Remove by value
+pop()           Remove by index
+clear()         Remove all
+index()         Get index
+count()         Count occurrences
+sort()          Sort list               list.sort(key=None, reverse=False)
+reverse()       Reverse list
+copy()          Copy list
+
+Note: Read sort method properly for interview questions because because it take 2 arguments key and reverse
+which means the sorting could be done on the basis of argument input.
+key argument values could be => len, str.lower, abs, lambda x: x[1]
+
+len =>              when we want to sort list on the basis of string values length
+
+str.lower =>        It will sort the string values in a list based on the first letter of each
+                    string in alphabetical order.
+
+abs =>              it will convert the list first on the absolute values and then short the list but in actual the value type is same.
+
+lambda x: x[1] =>   it will sort the list on the bases of second sub element on the list
+                    Example: L=[(4,1), (2,3), (1,2)]
+                             L.sort(key=lambda x: x[1])
+                    Output:  [(4,1), (1,2), (2,3)]
+
+Set methods
+Method                                  Description
+s.add(x)                                Add element
+s.update(iterable)                      Add multiple
+s.remove(x)                             Remove element   (It will give error if element not found)
+s.discard(x)                            Remove safely     (It will not give error if element not found)
+s.pop()                                 Remove random element     (Remove random element)
+s.clear()                               Remove all
+s.union(t)                              Combine sets         {1,2}  {2,3}  ==>>  {1,2,3}
+s.intersection(t)                       Common elements      {1,2}  {2,3}  ==>>  {2}
+s.difference(t)                         Difference           {1,2}  {2,3}  ==>>  {1}
+s.symmetric_difference()                Difference in Both   {1,2}  {2,3}  ==>>  {1,3}
+s.difference_update()                   Similar as difference just it will update original A set
+s.intersection_update()                 Similar as intersection just it will update original A set
+s.symmetric_difference_update()         Similar as symmetric_difference_update just it will update original A set
+s.issubset(t)                           {1,2}  {1, 2, 3, 4}   ==>>    print(A.issubset(B))  ==>> True
+s.issuperset(t)                         {1,2}  {1, 2, 3, 4}   ==>>    print(B.issuperset(A))  ==>> True
+s.isdisjoint(t)                         [{1,2}  {3,4}  if NO common elements  ==>> True]   [{1,2}  {1,2}  if common elements  ==>> False]
+
+Dict methods
+Method                         Description
+d.get("a")                     Safe way to access value {"a":1, "b":2}    d.get("a")  ==>>   1
+d.keys()                       Returns all keys  {"a":1, "b":2}           d.keys()    ==>>   dict_keys(['a','b'])
+d.values()                     Returns all values  {"a":1, "b":2}         d.values()  ==>>   dict_values(['1','2'])
+d.items()                      Returns key-value pairs  {"a":1, "b":2}    d.items()  ==>>   dict_items([('a',1),('b',2)])
+d.update()                     Add or modify multiple values
+d.setdefault()                 Gets value OR inserts default     ==>>      Adds key if not present
+d.fromkeys()                   Create dictionary with same value
+d.pop()                        Remove key and return value
+d.popitem()                    Removes last inserted item
+d.clear()                      Removes all elements
+d.copy()                       Creates duplicate dictionary
+
