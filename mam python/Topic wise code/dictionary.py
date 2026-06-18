@@ -1,9 +1,9 @@
 d = {}
 type(d)
-<class 'dict'>
+# <class 'dict'>
 d = dict()
 type(d)
-<class 'dict'>
+# <class 'dict'>
 
 # ************************* initializing a dictionary *************************************
 d = {"a": 1, "b": 2}
@@ -29,7 +29,7 @@ d1
 {10: 'hai'}
 
 d2 = dict(10="hai")
-SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
+# SyntaxError: expression cannot contain assignment, perhaps you meant "=="?
 
 # ****************************** composite keys ********************************
 

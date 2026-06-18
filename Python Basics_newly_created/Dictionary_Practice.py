@@ -45,3 +45,10 @@ d = {'a': 1, 'b': 2, 'c': 3}
 
 # del d['a']
 # print(d)
+
+##########################################Activity#################################################
+#If points={'a':1,'b':2,'c':3} then increment the value of b
+#Difference b/w pop() and popitem()
+#If l=['a','b','c','d'] create a dictionary with "No Value" as value for all keys.
+#If D1={'a':1,'b':2,'c':3} and D2={'a':1,'b':2,'c':3} then D3={**D1,**D2} or D3=D1/D2 what is the o/p D3=?
+#If points={'a':1,'b':2,'c':3} then add one more key 'd' with value 4

@@ -71,3 +71,9 @@
 # S3=set()
 # S3.update(S.symmetric_difference(S1))
 # print(S3)
+
+##########################################Activity#################################################
+#Difference b/w pop, remove, discard ?
+#Difference b/w difference and symmetric_difference
+#If a={"apple","yahoo","google"}    a.add({"facebook"})   then    a=?   and   a[1]=?
+#If s={1,2,3,4,5,6,7}      s.add([10,20,30])= ?    and  s.update([10,20,30])
