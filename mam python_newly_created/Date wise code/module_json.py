@@ -3,7 +3,7 @@
 
 import json
 ##############################    serialization -  dump(), dumps()
-# loads and dumps ---> variable/object
+# loads and dumps ---> variable/boject
 # load and dump ---> file
 
 #1
@@ -56,7 +56,7 @@ print(type(pck_obj))
 
 
 data = "hello"
-with open("../demo.pkl", "wb") as file:
+with open("../../sir python_newly_created/demo.pkl", "wb") as file:
     pickle.dump(data, file)
 
 #################################   de-serialize - load, loads
@@ -65,7 +65,7 @@ print(python_obj)
 print(type(python_obj))
 
 
-with open("../demo.pkl", "rb") as file:
+with open("../../sir python_newly_created/demo.pkl", "rb") as file:
     data = pickle.load(file)
     print(data)
 
