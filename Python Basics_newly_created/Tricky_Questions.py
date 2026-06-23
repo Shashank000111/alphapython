@@ -9,3 +9,17 @@
 # Sort a list without using sort()
 
 #Rotate a list
+
+# Find key with maximum value d={"Rohit":1, "Ravi":2, "Rahul":6, "Rishi":3}
+
+# Sort dictionary by key d={"Rohit":1, "Ravi":2, "Rahul":6, "Rishi":3}
+
+# Sort dictionary by value d={"Rohit":1, "Ravi":2, "Rahul":6, "Rishi":3}
+
+# Merge two dictionaries with common keys (sum values)
+
+# Find duplicate values in dictionary
+
+# Flatten a nested dictionary
+
+# Create nested dictionary from list
