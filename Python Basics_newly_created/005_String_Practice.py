@@ -95,6 +95,17 @@ print(s.startswith("H"))      #==>  True
 print(s.endswith("o"))        #==>  False
 print(s.endswith("ld"))       #==>  True
 
+#************************   isalnum() **********************************
+#WAP to check if the given character is a special character
+a=input("Input character:")
+if not a.isalnum():
+    print(f"{a} is a special character")
+
+#************************   isinstance() **********************************
+#WAP to check if the value is string or not
+s = "Shashank"
+print("Value is string" if isinstance(s,str) else "value is not string")
+
 #******************************** split() , rspit() *****************************
 #split()
 sentence = "python is a programming language"
@@ -137,12 +148,15 @@ s = "****#hai*****"
 print(s.strip("*#"))            #==>   'hai'
 print(s.strip("#"))             #==>   '****#hai*****'
 
-#Please learn format strings concept once learning the functions
 #************************************************** format strings ********************************************************
-# enter the name:John
-# string
-# 'My name is John'
-#
-# enter the name:Khan
-# string
-# 'My name is Khan'
+#############################  {} method  #########################
+a= input("enter the name:")
+print(f"My name is {a}")
+
+#############################  format method  #########################
+a= input("enter the name:")
+print("My name is {}".format(a))
+
+###########################  "   %s" % method  #########################
+a= input("enter the name:")
+print("My name is %s" % a)
