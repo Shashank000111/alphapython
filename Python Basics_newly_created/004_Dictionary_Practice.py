@@ -311,4 +311,49 @@ for i in s:
         d[ord(i)].append(i)
 print(d)
 
+###########################################   Default Dict  #####################################################
 
+#WAP to print the length of each word in the list in form of tuples
+L=['apple', 'google', 'gmail']
+for i in L:
+    print((len(i), i))
+
+#WAP to create dictionary with element and its count pair in the given iterable
+#####  First Method
+String="hello world"
+d={}
+for char in String:
+    d[char]=String.count(char)
+print(d)
+
+#####  Second Method
+String="hello world"
+d={}
+for char in String:
+    if char not in d:
+        d[char]=1
+    else:
+        d[char]+=1
+print(d)
+
+#####  Third Method
+from collections import defaultdict
+String="hello world"
+d=defaultdict(int)
+for char in String:
+    d[char]+=1
+print(d)
+
+#WAP to create a dictionary with word and its index pair
+l=["apple", "google", "gmail", "apple", "gmail", "flipkart", "apple"]
+d=defaultdict(list)
+for i, v in enumerate(l):
+    d[v].append(i)
+print(d)
+
+#WAP to create list of square of numbers
+l=[1,2,3,4,5]
+l1=[]
+for i in l:
+    l1.append(i**2)
+print(l1)

@@ -111,3 +111,19 @@ is, in                         Membership / identity
 lambda                         Anonymous function
 yield                          Generator
 async, await                   Async programming
+
+################################################  Import Notes ###############################################
+
+To use defaultdict we need to import from collection
+==>>  from collections import defaultdict
+
+To use zip_longest we need to import from itertools
+==>>  from itertools import zip_longest
+
+To use factorial() we need to import from math
+==>>  from math import factorial
+
+To use pi
+==>>  import math
+      p=math.pi
+

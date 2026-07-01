@@ -35,3 +35,5 @@
 #WAP to print fibonacci series from 0 t0 10.
 
 #WAP to print the asci value of each character
+
+#WAP to generate list of PI values with increasing decimal point numbers
