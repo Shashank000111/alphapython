@@ -114,3 +114,43 @@ print(d)
 s="hello good morning"
 d={ i:v if len(v)%2==0 else v[::-1]  for i, v in enumerate(s.split())}   # remember we don't write key in else block
 print(d)
+
+#WAP to create a dictionary with character and its ascii value.
+s="hello world"
+d={i:ord(i) for i in s}
+print(d)
+
+#WAP to reverse the value in dict if the type of value is string reverse it
+d={'a':1, 'b':"hello", 'c':85, 'd':12.3, 'e':[1,2,3]}
+d1={key:value[::-1] if isinstance(value,str) else value for key,value in d.items()}
+print(d1)
+
+#WAP to create a dict with words and count pair
+s="hello how are you hi hello hi hello"
+l=s.split()
+d={i:l.count(i)for i in l}
+print(d)
+
+#WAP tp flip the keys values of the dictionary using dict comprehension
+d={'a':1, 'b':"hello", 'c':85, 'd':12.3, 'e':(1,2,3)}
+d={v: k for k, v in d.items() if isinstance(v, (int, float, str, tuple))}
+print(d)
+
+#WAP to convert two list in to dict
+l1=["hello", "world"]
+l2=[10, 20]
+d={k:v for k,v in zip(l1,l2)}
+print(d)
+
+#WAP to group odd and even number given in the below list
+items=[1,2,3,4,5,6,7]
+from collections import defaultdict
+d=defaultdict(list)
+for i in items:
+    if i%2==0:
+        d[0].append(i)
+    else:
+        d[1].append(i)
+print(d)
+
+

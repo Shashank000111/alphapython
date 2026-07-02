@@ -37,3 +37,11 @@
 #WAP to print the asci value of each character
 
 #WAP to generate list of PI values with increasing decimal point numbers
+
+#WAP to print first 10 fibonaci number
+
+#WAP to print nth fibonaci number using for loop
+
+#WAP to print nth fibonaci series till number 10
+
+#WAP to check all the open brackets are closed or not string="{[()]}"

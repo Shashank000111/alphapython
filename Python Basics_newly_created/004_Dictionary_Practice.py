@@ -357,3 +357,12 @@ l1=[]
 for i in l:
     l1.append(i**2)
 print(l1)
+
+#WAP to group flowers and animal in the below list
+items=['lotus-flower', 'lily-flower', 'cat-animal', 'sunflower-flower', 'dog-animal']
+from collections import defaultdict
+d=defaultdict(list)
+for i in items:
+    d[i.split("-")[1]].append(i.split("-")[0])
+print(d)
+
